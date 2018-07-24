@@ -20,6 +20,7 @@ else:
 print("The computer chose...")
 print(random.choice(computer))
 
+
 #doesn't work |
     
 if player == r:
