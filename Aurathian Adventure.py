@@ -123,21 +123,24 @@ while x == 0:
     print("health: ", health)
     drink1 = raw_input("would you like a large, medium, small, or no canteen (l/m/s/n)? ")
     if drink1 == "l":
-        food = 25
+        water = 0
         health = 100
         print("health: ", health)
-        print("food: ", food)
+        print("water: ", water)
+    elif drink1 == "m":
+        water = 5
         health = 85
         print("health: ", health)
-        print("food: ", food)
+        print("water: ", water)
     elif drink1 == "s":
-        food = 35
+        water = 8
         health = 80
         print("health: ", health)
-        print("food: ", food)
+        print("water: ", water)
     elif drink1 == "n":
         print("health: ", health)
-        print("food: ", food)
+        print("water: ", water)
+        
     player2= raw_input("Would you like to fill your canteens (y/n)? ")
     player3= raw_input("Would you like to pick some apples (y/n)")
     player4= raw_input("Would you like to climb the mountain (y/n)")
@@ -176,7 +179,7 @@ while x == 0:
     #make time???
     #multiple characters???
     #1 or 2 players???
-    #has a villian at each cave to make it harder. Bear(earth), Siren(which will guard the water cave), A dragon (will guard the last cave) Bear(will guard the Earth) and a Magma monster (that will guard the fire element cave)
+    #has a villian at each cave to make it harder. Bear (wil be guarding the earth), Siren(which will guard the water cave), A dragon (will guard the last cave) and a Magma monster (that will guard the fire element cave)
     #each cave has a gem and each gem is a different element. Water, Fire, Earth. 
     #Caves abysmal den, walslan hole, elmere caves
     
