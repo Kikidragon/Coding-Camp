@@ -18,13 +18,13 @@ while x == 0:
     
     print("You have survived a plane crash and are now on the mythical, forested island of Aurath. Your mission is to survive this island and complete the mystical wand of Aurath. You have found the wand lying on a rock, but 3 of the elemental stones are missing, and you must find them. Once you retrive all 3 and reinsert them into the wand, you will be returned home safely and gain the ability to turn into a dragon!!! Good luck!.") 
     
-    food = 40
-    health = 100
-    magic = 100
-    lives = 3
-    water = 40
-    medicine = 40
-    time = 530
+    food = int(40)
+    health = int(100)
+    magic = int(100)
+    lives = int(3)
+    water = int(40)
+    medicine = int(40)
+    time = int(530)
     
     inventory = ("You have %s lives, %s health, %s magic, %s packets of food, %s canteens of water, and %s medical kits. The time is %s.")
     print(inventory %(lives, health, magic, food, water, medicine, time))
@@ -60,20 +60,34 @@ while x == 0:
     elif path == "3":
         print("You are on the way to the fire elemental artifact.")
         
-    health -15
-    print("health: " + health)
-    eat1 = raw_input("You are now hungry. would you like a large, medium, small, or no meal (l/m/s/n)? ")
+    health = 75
+    print("health: ", health)
+    eat1 = raw_input("You are now hungry because you did not eat on the plane. would you like a large, medium, small, or no meal (l/m/s/n)? ")
     if eat1 == "l":
-        food -15
-        health +15
-        print("health: " + health)
-        print("food: " + food)
-     if eat1 == "m":
-        food -15
-        health +15
-        print("health: " + health)
-        print("food: " + food)
+        food = 25
+        health = 100
+        print("health: ", health)
+        print("food: ", food)
+    elif eat1 == "m":
+        food = 30
+        health = 85
+        print("health: ", health)
+        print("food: ", food)
+    elif eat1 == "s":
+        food = 35
+        health = 80
+        print("health: ", health)
+        print("food: ", food)
+    elif eat1 == "n":
+        print("health: ", health)
+        print("food: ", food)
         
+    if path == "1":
+        print("Now that you have eaten, you will be heading to the cave of Abysmal, but first you should learn the basics of your weapon in case you are attacked.")
+    elif path == "2": 
+        print("Now that you have eaten, you will be heading to the cave of Walslan, but first you should learn the basics of your weapon in case you are attacked.")
+    elif path == "3":
+        print("Now that you have eaten, you will be heading to the Elmere caves, but first you should learn the basics of your weapon in case you are attacked.")
     #STORY NOTES:
     #in a forest on an island "Aurath", 
     #plane crash,
@@ -94,6 +108,7 @@ while x == 0:
     #1 or 2 players???
     #has a villian at each cave to make it harder. Evil Unicorn(earth), Siren(which will gaurd the water cave), A dragon (will gaurd)
     #each cave has a gem and each gem is a different element. Water, Fire, Earth. 
+    #Caves abysmal den, walslan hole, elmere caves
     
     
     
