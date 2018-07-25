@@ -41,11 +41,8 @@ while x == 0:
         else:
             print("Please choose one of the options.")
         sure = raw_input("are you sure (y/n)? ")
-        if sure == "n":
+        if sure == "y" or "n":
             print(("Too bad, you get it anyway! Congratulations, you got a " + weapon + "!"))
-            break
-        elif sure == "y":
-            print("Congratulations, you got a " + weapon + "!")
             break
     print("Now that you have your supplies you are ready to begin your journey. Good luck dear adventurer, may luck be in your favor! ")    
    
@@ -55,20 +52,20 @@ while x == 0:
         medicine = 25
         health = 75
         print("health: ", health)
-        print("medicine: ", medicine)
+        print("food: ", food)
     elif eat1 == "m":
         medicine = 30
         health = 60
         print("health: ", health)
-        print("medicine: ", medicine)
+        print("food: ", food)
     elif eat1 == "s":
         medicine = 35
         health = 65
         print("health: ", health)
-        print("medicine: ", medicine)
+        print("food: ", food)
     elif eat1 == "n":
         print("health: ", health)
-        print("medicine: ", medicine)
+        print("food: ", food)
         print("YOU DIE! Lose a life.")
         lives = 2
         print("lives: ", lives)
@@ -120,7 +117,7 @@ while x == 0:
     elif path == "3":
         print("Now that you have eaten, you will be heading to the Elmere caves, but first you should learn the basics of your weapon in case you are attacked.")
     
-    
+    player=
     print("You have now practiced for seven hours, you are thirsty and need to feed turtle.")
     
     print("health: ", health)
@@ -144,33 +141,35 @@ while x == 0:
         print("health: ", health)
         print("water: ", water)
         
-    
+    player2= raw_input("Would you like to fill your canteens (y/n)? ")
+    if player2 == "y":
+        water = 15
+        print("water: ", water)
+    elif player2 == "n":
+        print("water: ", water)
+        print("Continuing on path ")
+    player3= raw_input("Would you like to pick some apples (y/n)")
+    if player3 == "y":
+        food = 40
+        print("food: ", food)
+    elif player3 == "n":
+        print("food: ", food)
+    player4= raw_input("Would you like to climb the mountain (y/n)")
     if path == "1":
-        print("You are now nearing a river.")
-        player2= raw_input("Would you like to fill your canteens (y/n)? ")
-        if player2 == "y":
-            water = 15
-            print("water: ", water)
-        elif player2 == "n":
-            print("water: ", water)
-        print("Continuing on path.       You finaly make it to the entrance of the cave and you enter. That is when you see a giant BEAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        print("You are now nearing a river", player2)
         
     elif path == "2":
-        print("you are nearing an apple tree.")
-        player3= raw_input("Would you like to pick some apples (y/n)? ")
+        print("you are nearing an apple tree", player3)
         if player3 == "y":
-            food = 40
-            print("food: ", food)
+            print("Apples apples apples")
         elif player3 == "n":
-            print("food: ", food)
-        
+            print ("no appples given")
     elif path == "3":
-        print("You are nearing a mountain.")
-        player4= raw_input("Would you like to climb the mountain (y/n)? ")
+        print("You are nearing a mountain", player4)
         if player4 == "y":
-            print("You climbed the mountain and found the entrance to a cave.")
+            print("You climbed the mountain and found the enttrance to the cave.")
         elif player4 == "n":
-            print("You will move around the mountain now.")
+            print("Will move around mountain now.")
     #STORY NOTES:
     #in a forest on an island "Aurath", 
     #plane crash,

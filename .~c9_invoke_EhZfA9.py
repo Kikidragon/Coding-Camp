@@ -153,7 +153,8 @@ while x == 0:
             print("water: ", water)
         elif player2 == "n":
             print("water: ", water)
-        print("Continuing on path.       You finaly make it to the entrance of the cave and you enter. That is when you see a giant BEAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        print("Continuing on path. You finaly make it to the entrance of the cave and you enter. That is when you see a GIANT BEAR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+        
         
     elif path == "2":
         print("you are nearing an apple tree.")
@@ -171,7 +172,13 @@ while x == 0:
             print("You climbed the mountain and found the entrance to a cave.")
         elif player4 == "n":
             print("You will move around the mountain now.")
-    #STORY NOTES:
+        
+    quit = raw_input("press Q to quit. ") 
+    if quit == "Q" or "q":
+        break    #so that the player can exit
+    
+    
+        #STORY NOTES:
     #in a forest on an island "Aurath", 
     #plane crash,
     #can make weapons, 
@@ -192,11 +199,3 @@ while x == 0:
     #has a villian at each cave to make it harder. Bear(will be guarding the earth), Siren(which will guard the water cave), A dragon (will guard the last cave) and a Magma monster (that will guard the fire element cave)
     #each cave has a gem and each gem is a different element. Water, Fire, Earth. 
     #Caves abysmal den, walslan hole, elmere caves
-    
-    
-    
-        
-    quit = raw_input("press Q to quit. ") 
-    if quit == "Q" or "q":
-        break    #so that the player can exit
-    
