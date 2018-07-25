@@ -1,25 +1,64 @@
 import random
-
+import time
 
 x = 0    #creates infinite loop!
 while x == 0:
     print("") #opening here/welcome message
     
     #what variables should we make?
-    print("") 
     
+    name= raw_input("What is your name? ")
+    print(("Hello", name))
+    gender = raw_input("What is your gender (b/g)? ")
+    if gender == "b":
+        boygirl = "boy"
+    elif gender == "g":
+        boygirl = "girl"
+    print(("You are a", boygirl))
+    
+    print("You have survived a plane crash and are now on the mythical, forested island of Aurath. Your mission is to survive this island and find the mystical wand of Aurath. Once you retrive this item you will be returned home safely and gain the ability to turn into a dragon!!! Good luck!.") 
+    
+    food = 40
+    health = 100
+    magic = 100
+    lives = 3
+    water = 40
+    medicine = 40
+    time = 530
+    
+    inventory = ("You have %s lives, %s health, %s magic, %s packets of food, %s canteens of water, and %s medical kits. The time is %s.")
+    view = raw_input("View inventory (y/n?)")
+    if view == "y" or "n":
+        print("Too bad! Look at it anyway!")
+        print(inventory %(lives, health, magic, food, water, medicine, time))
+        weapon = raw_input("What weapon would you like? ")
+        print("You chose ", weapon)
+        sure = raw_input("are you sure (y/n)? ")
+        while sure == "n":
+            weapon = raw_input("What weapon would you like? ")
+            sure = raw_input("are you sure (y/n)? ")
+            while sure == "n":
+                weapon = raw_input("What weapon would you like? ")
+            if sure == "y":
+                print(("Congratulations, you got a ", weapon, "!"))
+        if sure == "y":
+            print(("Congratulations, you got a ", weapon, "!"))
+        
 #STORY NOTES:
 #in a forest on an island "Aurath", 
 #plane crash,
 #can make weapons, 
 #choose if a boy or girl, 
+#cannibals/wild animals,
 #3 lives, 
 #no villian only bad situation, 
-#retrieving magic artifact, 
+#retrieving magic artifact (turns them into a dragon!!!:), 
+#magic (elemental),
 #characters can starve, die of thirst, have to sleep, get sick, etc.,
 #different seasons with different resources,
 #can choose name,
 #different foods have different health benefits,
+#animal helpers,
 #make time???
 #multiple characters???
 #1 or 2 players???
@@ -28,116 +67,3 @@ while x == 0:
     if quit == "Q" or "q":
         break    #so that the player can exit
     
-    
-#STARTING CODE
-
-import random
-
-
-
-print("Welcome to Camel!")
-print("You have stolen a camel to make your way across the great Mobi desert.")
-print("The natives want their camel back and are chasing you down!")
-print("Survive your desert trek and outrun the natives.")
-print()
-
-# Variables
-milesTraveled = 0
-thirst = 0
-camelFatigue = 0
-nativesTraveled = -20
-canteen = 3
-oasis = 0
-done = False
-
-# Start main loop
-while not done:
-    nativesBehind = milesTraveled - nativesTraveled
-    fullSpeed = random.randrange(10, 21)
-    moderateSpeed = random.randrange(5, 13)
-
-    print("A. Drink from your canteen.")
-    print("B. Ahead at moderate speed.")
-    print("C. Ahead full speed.")
-    print("D. Stop for the night.")
-    print("E. Status check")
-    print("Q. Quit.")
-    print()
-
-    userInput = input("Your choice? ")
-
-    if userInput.lower() == "q":
-        done = True
-
-    # Status
-    elif userInput.lower() == "e":
-        print("Miles traveled:", milesTraveled)
-        print("Drinks in canteen:", canteen)
-        print("Your camel has", camelFatigue, "amount of fatigue.")
-        print("The natives are", nativesBehind, "miles behind you.")
-
-    # Stop for night
-    elif userInput.lower() == "d":
-        camelFatigue *= 0
-        print("Your camel feels refreshed and happy his fatigue is now", camelFatigue)
-        nativesTraveled += random.randrange(7, 15)
-
-    # Move full speed
-    elif userInput.lower() == "c":
-        print("You traveled", fullSpeed, "miles!")
-        milesTraveled += fullSpeed
-        thirst += 1
-        camelFatigue += random.randrange(1, 4)
-        nativesTraveled += random.randrange(7, 15)
-        oasis = random.randrange(1, 21)
-
-    # Move moderate speed
-    elif userInput.lower() == "b":
-        print("You traveled", moderateSpeed, "miles!")
-        milesTraveled += moderateSpeed
-        thirst += 1
-        camelFatigue += 1
-        nativesTraveled += random.randrange(7, 15)
-        oasis = random.randrange(1, 21)
-
-    # Drink canteen
-    elif userInput.lower() == "a":
-        if canteen == 0:
-            print("You're out of water.")
-        else:
-            canteen -= 1
-            thirst *= 0
-            print("You have", canteen, "drinks left and you are no longer thirsty.")
-
-    # Not done check
-    if oasis == 20:
-        camelFatigue *= 0
-        thirst *= 0
-        canteen = 3
-        print("You found an oasis! After taking a drink you filled your canteen and the camel is refreshed.")
-
-    if nativesBehind <= 15:
-        print("The natives are drawing near!")
-
-    if milesTraveled >= 200 and not done:
-        print("You made it across the desert, you win!")
-        done = True
-
-    if nativesTraveled >= milesTraveled:
-        print("The natives caught and beheaded you.")
-        print("You're dead!")
-        done = True
-
-    if thirst > 4 and thirst <= 6 and not done:
-        print("You are thirsty")
-
-    if thirst > 6:
-        print("You died of dehydration!")
-        done = True
-
-    if camelFatigue > 5 and camelFatigue <= 8 and not done:
-        print("Your camel is getting tired.")
-
-    if camelFatigue > 8:
-        print("Your camel is dead.")
-        done = True
