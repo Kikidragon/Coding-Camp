@@ -1,11 +1,12 @@
 import random
-
+import time 
 
 
 print("Welcome to Camel!")
 print("You have stolen a camel to make your way across the great Mobi desert.")
 print("The natives want their camel back and are chasing you down!")
 print("Survive your desert trek and outrun the natives.")
+name = raw_input("Enter name here")
 print()
 
 # Variables
