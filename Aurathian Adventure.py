@@ -26,7 +26,7 @@ while x == 0:
     medicine = 40
     time = 530
     
-    i/nventory = ("You have %s lives, %s health, %s magic, %s packets of food, %s canteens of water, and %s medical kits. The time is %s.")
+    inventory = ("You have %s lives, %s health, %s magic, %s packets of food, %s canteens of water, and %s medical kits. The time is %s.")
     print(inventory %(lives, health, magic, food, water, medicine, time))
     while True:
         weapon= raw_input("What weapon would you like? bow and arrow, glaive, sword, or spear? ")
@@ -38,28 +38,41 @@ while x == 0:
             print("You have choosen Sword")
         elif weapon == "spear":
             print("You have choosen spear")
+        else:
+            print("Please choose one of the options.")
         sure = raw_input("are you sure (y/n)? ")
-        if sure == "n":
-            print("")
-        elif sure == "y":
-        
-            print(("Congratulations, you got a " + weapon + "!"))
+        if sure == "y" or "n":
+            print(("Too bad, you get it anyway! Congratulations, you got a " + weapon + "!"))
             break
     print("Now that you have your supplies you are ready to begin your journey. Good luck dear adventurer, may luck be in your favor! ")    
    
     path = raw_input("Which path would you like to take (1, 2, or 3)? ")
-    if path == "path 1":
+    if path == "1":
         print("You have chosen path 1.")
-    elif path == "path 2":
+    elif path == "2":
         print("You have chosen path 2.")
-    elif path == "path 3":
+    elif path == "3":
         print("You have chosen path 3.")
-    if path == "path 1":
+    if path == "1":
         print("you are on your way to the earth elemental artifact.")
-    elif path == "path 2":
+    elif path == "2":
         print("you are on your way to the water elemental artifact.")
-    elif path == "path 3":
+    elif path == "3":
         print("You are on the way to the fire elemental artifact.")
+        
+    health -15
+    print("health: " + health)
+    eat1 = raw_input("You are now hungry. would you like a large, medium, small, or no meal (l/m/s/n)? ")
+    if eat1 == "l":
+        food -15
+        health +15
+        print("health: " + health)
+        print("food: " + food)
+     if eat1 == "m":
+        food -15
+        health +15
+        print("health: " + health)
+        print("food: " + food)
         
     #STORY NOTES:
     #in a forest on an island "Aurath", 
