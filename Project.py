@@ -18,6 +18,7 @@ while x == 0:
     
     print("You have survived a plane crash and are now on the mythical, forested island of Aurath. Your mission is to survive this island and find the mystical wand of Aurath. Once you retrive this item you will be returned home safely and gain the ability to turn into a dragon!!! Good luck!.") 
     
+    
     food = 40
     health = 100
     magic = 100
@@ -43,7 +44,13 @@ while x == 0:
                 print(("Congratulations, you got a ", weapon, "!"))
         if sure == "y":
             print(("Congratulations, you got a ", weapon, "!"))
-        
+    
+    #here
+    
+    quit = raw_input("press Q to quit. ") 
+    if quit == "Q" or "q":
+        break    #so that the player can exit
+    
 #STORY NOTES:
 #in a forest on an island "Aurath", 
 #plane crash,
@@ -62,8 +69,3 @@ while x == 0:
 #make time???
 #multiple characters???
 #1 or 2 players???
-    
-    quit = raw_input("press Q to quit. ") 
-    if quit == "Q" or "q":
-        break    #so that the player can exit
-    
