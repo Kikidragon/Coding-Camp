@@ -183,8 +183,11 @@ while x == 0:
     path2 = raw_input("Now that you have claimed the gem you must choose a new path (2 or 3). ")
     if path2 == "2":
         print("You have chosen path 2.")
+        #paste path 2
     elif path2 == "3":
         print("You have chosen path 3.")
+        
+        #paste path 3
         
     elif path == "2":
         print("you are nearing an apple tree.")
