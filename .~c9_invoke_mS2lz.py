@@ -1291,7 +1291,7 @@ while x == 0:
                 print("Goodbye!")
                 break
         elif finalstage == "t":
-            ("It turns out that the dragon is reasonable. In exchange for all your supplies, he will let you pass and keep the wand(as well as your weapon).")
+            print("It turns out that the dragon is reasonable. In exchange for all your supplies, he will let you pass and keep the wand(as well as your weapon).")
             finalchoice = raw_input("do you accept the offer(y/n)? ")
             if finalchoice == "n":
                 print("The dragon is offended, and therefore burns you in a fiery inferno.")
