@@ -347,7 +347,16 @@ while x == 0:
             print("You have chosen path 3.")
             print("You are nearing a mountain.")
             player4= raw_input("Would you like to climb the mountain (y/n)? ")
-            if player4 == "n"
+            if player4 == "n":
+                print("You have fallen off a cliff.")
+                print("YOU DIED!")
+                end = raw_input("Play again (y/n)? ")
+                if end == "y":
+                    print("Welcome back!")
+                    continue
+                if end == "n":
+                    print("Goodbye!")
+                    break
             elif player4 == "y":
                 print("You climbed the mountain and found the entrance to a cave. You then decide to enter and that is when you see a magma monster!!. you are frozen in fear for a second when you notice that behind this monster is the artifact, which is surrounded by a magic moat of lava")
                 magma= raw_input("Would you like to fight, run, hide, or trick the monster?(f/r/h/t)")
@@ -620,7 +629,17 @@ while x == 0:
                     print("You have successfully tricked the bear. The bear, understanding he was tricked, presents you with the earth gem.")
             print("You are nearing a mountain.")
             player4= raw_input("Would you like to climb the mountain (y/n)? ")
-            if player4 == "y":
+            if player4 == "n":
+                print("You have fallen off a cliff.")
+                print("YOU DIED!")
+                end = raw_input("Play again (y/n)? ")
+                if end == "y":
+                    print("Welcome back!")
+                    continue
+                if end == "n":
+                    print("Goodbye!")
+                    break
+            elif player4 == "y":
                 print("You climbed the mountain and found the entrance to a cave. You then decide to enter and that is when you see a magma monster!!. you are frozen in fear for a second when you notice that behind this monster is the artifact, which is surrounded by a magic moat of lava")
                 magma= raw_input("Would you like to fight, run, hide, or trick the monster?(f/r/h/t)")
                 if magma== "f":
