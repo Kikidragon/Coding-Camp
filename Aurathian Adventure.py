@@ -190,32 +190,32 @@ while x == 0:
                 print("food: ", food)
             elif player3 == "n":
                 print("food: ", food)
-        print("You are inching closer and closer to the cave and should get there tommorrow, but now you need to rest. ")
-        health = 80
-        time = 700
-        print("health: ", health)
-        print("time: ", time)
-        rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
-        if rest == "4":
-            health = 100
-            time = 1100
+            print("You are inching closer and closer to the cave and should get there tommorrow, but now you need to rest. ")
+            health = 80
+            time = 700
             print("health: ", health)
             print("time: ", time)
-        elif rest == "3":
-            health = 95
-            time = 1000
-            print("health: ", health)
-            print("time: ", time)
-        elif rest == "2":
-            health = 85
-            time = 900
-            print("health: ", health) 
-            print("time: ", time)
-        elif drink1 == "1":
-            health = 82
-            time = 800
-            print("health: ", health)
-            print("time: ", time)
+            rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
+            if rest == "4":
+                health = 100
+                time = 1100
+                print("health: ", health)
+                print("time: ", time)
+            elif rest == "3":
+                health = 95
+                time = 1000
+                print("health: ", health)
+                print("time: ", time)
+            elif rest == "2":
+                health = 85
+                time = 900
+                print("health: ", health) 
+                print("time: ", time)
+            elif drink1 == "1":
+                health = 82
+                time = 800
+                print("health: ", health)
+                print("time: ", time)
             
         print("Now that you are rested up you can continue the short journey to the cave. You finally have reached the cave when you hear a song. That is when you realize it is the infamous siren song.")
         siren= raw_input("Would you like to fight, run, hide, or cover your ears and stay as silent as you can to get behind her?(f,r,h,c)? ")
