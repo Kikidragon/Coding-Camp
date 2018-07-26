@@ -156,35 +156,84 @@ while x == 0:
             print("water: ", water)
         print("Continuing on path. You finaly make it to the entrance of the cave and you enter. That is when you see a GIANT BEAR!!!!!!!!!!!")
         bear= raw_input("Would you like to fight, run, hide, or trick the bear(f/r/h/t)? ")    
-    if bear == "f":
-        print("You have successfully defeated the bear. The bear, understanding he was rightfully defeated in battle, presents you with the earth gem.")
-    elif bear == "r":
-        print("The bear easily catches up and eats you.")
-        print("YOU DIED!")
-        end = raw_input("Play again (y/n)? ")
-        if end == "y":
-            print("Welcome back!")
-            continue
-        if end == "n":
-            print("Goodbye!")
-            break
-    elif bear == "h":
-        print("The bear finds and kills you.")
-        print("YOU DIED!")
-        end = raw_input("Play again (y/n)? ")
-        if end == "y":
-            print("Welcome back!")
-            continue
-        if end == "n":
-            print("Goodbye!")
-            break
-    elif bear == "t":
-        print("You have successfully tricked the bear. The bear, understanding he was tricked, presents you with the earth gem.")
-    path2 = raw_input("Now that you have claimed the gem you must choose a new path (2 or 3). ")
-    if path2 == "2":
-        print("You have chosen path 2.")
-    elif path2 == "3":
-        print("You have chosen path 3.")
+        if bear == "f":
+            print("You have successfully defeated the bear. The bear, understanding he was rightfully defeated in battle, presents you with the earth gem.")
+        elif bear == "r":
+            print("The bear easily catches up and eats you.")
+            print("YOU DIED!")
+            end = raw_input("Play again (y/n)? ")
+            if end == "y":
+                print("Welcome back!")
+                continue
+            if end == "n":
+                print("Goodbye!")
+                break
+        elif bear == "h":
+            print("The bear finds and kills you.")
+            print("YOU DIED!")
+            end = raw_input("Play again (y/n)? ")
+            if end == "y":
+                print("Welcome back!")
+                continue
+            if end == "n":
+                print("Goodbye!")
+                break
+        elif bear == "t":
+            print("You have successfully tricked the bear. The bear, understanding he was tricked, presents you with the earth gem.")
+        path2 = raw_input("Now that you have claimed the gem you must choose a new path (2 or 3). ")
+        if path2 == "2":
+            print("You have chosen path 2.")
+            print("you are nearing an apple tree.")
+            player3= raw_input("Would you like to pick some apples (y/n)? ")
+            if player3 == "y":
+                food = 40
+                print("food: ", food)
+            elif player3 == "n":
+                print("food: ", food)
+       
+        elif path2 == "3":
+            print("You have chosen path 3.")
+            print("You are nearing a mountain.")
+            player4= raw_input("Would you like to climb the mountain (y/n)? ")
+            if player4 == "y":
+                print("You climbed the mountain and found the entrance to a cave. You then decide to enter and that is when you see a magma monster!!. you are frozen in fear for a second when you notice that behind this monster is the artifact, which is surrounded by a magic moat of lava")
+                magma= raw_input("Would you like to fight, run, hide, or trick the monster?(f/r/h/t)")
+                if magma== "f":
+                    print("You have been toasted to a crisp.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+                elif magma== "r":
+                    print("You were hit by lava from behind.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+                elif magma== "h":
+                    print("you have been able to hide and sneak behind Magma. You silently jump across the moat and have collected the artifact.")
+                
+                elif magma == "t":
+                    print("You have not tricked the monster so he threw you into the lava.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+            elif player4 == "n":
+                print("You will move around the mountain now.")
+
         
     elif path == "2":
         print("you are nearing an apple tree.")
@@ -194,7 +243,10 @@ while x == 0:
             print("food: ", food)
         elif player3 == "n":
             print("food: ", food)
+        print("You inching closer and closer to the cave and should get there tommorrow, but now you need to rest")
         
+        print("Now that you are rested up you can continue the short journey to the cave. You finally have reached the cave when you hear a song. thats when you realize it is the infamous siren song.")
+        siren= raw_input("Would you like to fight, run, hide, or co")
     elif path == "3":
         print("You are nearing a mountain.")
         player4= raw_input("Would you like to climb the mountain (y/n)? ")
