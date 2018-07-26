@@ -142,9 +142,9 @@ while x == 0:
         print("health: ", health)
         print("water: ", water)
     
-   
+  
     
-    deif path == "1":
+    if path == "1":
         print("You are now nearing a river.")
         player2= raw_input("Would you like to fill your canteens (y/n)? ")
         if player2 == "y":
@@ -249,6 +249,100 @@ while x == 0:
                 break
         elif siren == "c":
             print("You snuck behind her, clamied the stone, and ran out as fast as you could to get out of there!")
+            print("You are now on path 3.")
+            print("You are nearing a mountain.")
+            player4= raw_input("Would you like to climb the mountain (y/n)? ")
+            if player4 == "y":
+                print("You climbed the mountain and found the entrance to a cave. You then decide to enter and that is when you see a magma monster!!. you are frozen in fear for a second when you notice that behind this monster is the artifact, which is surrounded by a magic moat of lava")
+                magma= raw_input("Would you like to fight, run, hide, or trick the monster?(f/r/h/t)")
+                if magma== "f":
+                    print("You have been toasted to a crisp.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+                elif magma== "r":
+                    print("You were hit by lava from behind.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+                elif magma== "h":
+                    print("you have been able to hide and sneak behind Magma. You silently jump across the moat and have collected the artifact.")
+                    print("You have successfully collected all three gems and have reinserted them into the wand. now you must battle one last time to get to the portal which can teleport you home. Get ready!")
+                    print("As you approach, you see the cave open and unguarded, and wonder why. As you approach, a DRAGON appears, materializing out of the forest next to the cave. ")
+                    finalstage = raw_input("Do you choose to fight, retreat, try to sneak past, or try to talk to the dragon (f/r/s/t)? ")
+                    if finalstage == "f":
+                        print("You have been sent to outer space.")
+                        print("YOU DIED!")
+                        end = raw_input("Play again (y/n)? ")
+                        if end == "y":
+                            print("Welcome back!")
+                            continue
+                        if end == "n":
+                            print("Goodbye!")
+                            break
+                    elif finalstage == "r":
+                        print("You try to run, but fall into a pit filled with lava.")
+                        print("YOU DIED!")
+                        end = raw_input("Play again (y/n)? ")
+                        if end == "y":
+                            print("Welcome back!")
+                            continue
+                        if end == "n":
+                            print("Goodbye!")
+                            break
+                    elif finalstage == "s":
+                        ("The dragon does not see you, so turns to go back into the cave. In doing so, he knocks you into a tree full of deadly wasps with his tail.")
+                        print("YOU DIED!")
+                        end = raw_input("Play again (y/n)? ")
+                        if end == "y":
+                            print("Welcome back!")
+                            continue
+                        if end == "n":
+                            print("Goodbye!")
+                            break
+                    elif finalstage == "t":
+                        ("It turns out that the dragon is reasonable. In exchange for all your supplies, he will let you pass and keep the wand(as well as your weapon).")
+                        finalchoice = raw_input("do you accept the offer(y/n)? ")
+                        if finalchoice == "n":
+                            print("The dragon is offended, and therefore burns you in a fiery inferno.")
+                            print("YOU DIED!")
+                            end = raw_input("Play again (y/n)? ")
+                            if end == "y":
+                                print("Welcome back!")
+                                continue
+                            if end == "n":
+                                print("Goodbye!")
+                                break
+                        if finalchoice == "y":
+                            print("You arrive in the cave and are teleported home. After arriving in your home, England, you are able to turn into a dragon whenever you want using the magical wand, and get to keep your weapon as well. You know you will never forget your adventures on the island of Aurath, and decide to write a novel about your experiences.")
+                            end = raw_input("Play again (y/n)? ")
+                            if end == "y":
+                                print("Welcome back!")
+                                continue
+                            if end == "n":
+                                print("Goodbye!")
+                                break
+                elif magma == "t":
+                    print("You have not tricked the monster so he threw you into the lava.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+        
         elif path2 == "3":
             print("You have chosen path 3.")
             print("You are nearing a mountain.")
@@ -278,7 +372,132 @@ while x == 0:
                         break
                 elif magma== "h":
                     print("you have been able to hide and sneak behind Magma. You silently jump across the moat and have collected the artifact.")
-                
+                    print("You have chosen path 2.")
+                    print("you are nearing an apple tree.")
+                    player3= raw_input("Would you like to pick some apples (y/n)? ")
+                    if player3 == "y":
+                        food = 40
+                        print("food: ", food)
+                    elif player3 == "n":
+                        print("food: ", food)
+                    print("You are inching closer and closer to the cave and should get there tommorrow, but now you need to rest. ")
+                    health = 80
+                    time = 700
+                    print("health: ", health)
+                    print("time: ", time)
+                    rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
+                    if rest == "4":
+                        health = 100
+                        time = 1100
+                        print("health: ", health)
+                        print("time: ", time)
+                    elif rest == "3":
+                        health = 95
+                        time = 1000
+                        print("health: ", health)
+                        print("time: ", time)
+                    elif rest == "2":
+                        health = 85
+                        time = 900
+                        print("health: ", health) 
+                        print("time: ", time)
+                    elif drink1 == "1":
+                        health = 82
+                        time = 800
+                        print("health: ", health)
+                        print("time: ", time)
+                    
+                print("Now that you are rested up you can continue the short journey to the cave. You finally have reached the cave when you hear a song. That is when you realize it is the infamous siren song.")
+                siren= raw_input("Would you like to fight, run, hide, or cover your ears and stay as silent as you can to get behind her?(f,r,h,c)? ")
+                if siren == "f":
+                    print("You turn into her mindless minion.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+                elif siren == "r":
+                    print("You got distracted by the song and ran into a tree, fell off a cliff, and drowned in the ocean.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+                elif siren== "h":
+                    print("you hide but she found you and turned you into a zombie.")
+                    print("YOU DIED!")
+                    end = raw_input("Play again (y/n)? ")
+                    if end == "y":
+                        print("Welcome back!")
+                        continue
+                    if end == "n":
+                        print("Goodbye!")
+                        break
+                elif siren == "c":
+                    print("You snuck behind her, clamied the stone, and ran out as fast as you could to get out of there!")
+                            #final boss battle scene woooo!
+                    print("You have successfully collected all three gems and have reinserted them into the wand. now you must battle one last time to get to the portal which can teleport you home. Get ready!")
+                    print("As you approach, you see the cave open and unguarded, and wonder why. As you approach, a DRAGON appears, materializing out of the forest next to the cave. ")
+                    finalstage = raw_input("Do you choose to fight, retreat, try to sneak past, or try to talk to the dragon (f/r/s/t)? ")
+                    if finalstage == "f":
+                        print("You have been sent to outer space.")
+                        print("YOU DIED!")
+                        end = raw_input("Play again (y/n)? ")
+                        if end == "y":
+                            print("Welcome back!")
+                            continue
+                        if end == "n":
+                            print("Goodbye!")
+                            break
+                    elif finalstage == "r":
+                        print("You try to run, but fall into a pit filled with lava.")
+                        print("YOU DIED!")
+                        end = raw_input("Play again (y/n)? ")
+                        if end == "y":
+                            print("Welcome back!")
+                            continue
+                        if end == "n":
+                            print("Goodbye!")
+                            break
+                    elif finalstage == "s":
+                        ("The dragon does not see you, so turns to go back into the cave. In doing so, he knocks you into a tree full of deadly wasps with his tail.")
+                        print("YOU DIED!")
+                        end = raw_input("Play again (y/n)? ")
+                        if end == "y":
+                            print("Welcome back!")
+                            continue
+                        if end == "n":
+                            print("Goodbye!")
+                            break
+                    elif finalstage == "t":
+                        ("It turns out that the dragon is reasonable. In exchange for all your supplies, he will let you pass and keep the wand(as well as your weapon).")
+                        finalchoice = raw_input("do you accept the offer(y/n)? ")
+                        if finalchoice == "n":
+                            print("The dragon is offended, and therefore burns you in a fiery inferno.")
+                            print("YOU DIED!")
+                            end = raw_input("Play again (y/n)? ")
+                            if end == "y":
+                                print("Welcome back!")
+                                continue
+                            if end == "n":
+                                print("Goodbye!")
+                                break
+                        if finalchoice == "y":
+                            print("You arrive in the cave and are teleported home. After arriving in your home, England, you are able to turn into a dragon whenever you want using the magical wand, and get to keep your weapon as well. You know you will never forget your adventures on the island of Aurath, and decide to write a novel about your experiences.")
+                            end = raw_input("Play again (y/n)? ")
+                            if end == "y":
+                                print("Welcome back!")
+                                continue
+                            if end == "n":
+                                print("Goodbye!")
+                                break
+    
                 elif magma == "t":
                     print("You have not tricked the monster so he threw you into the lava.")
                     print("YOU DIED!")
@@ -441,7 +660,15 @@ while x == 0:
 
                 #here
             elif path3choice == "2":
-                #here
+                ("You are not paying attention and fall off a cliff.")
+                print("YOU DIED!")
+                end = raw_input("Play again (y/n)? ")
+                if end == "y":
+                    print("Welcome back!")
+                    continue
+                if end == "n":
+                    print("Goodbye!")
+                    break
         
         #final boss battle scene woooo!
         print("You have successfully collected all three gems and have reinserted them into the wand. now you must battle one last time to get to the portal which can teleport you home. Get ready!")
