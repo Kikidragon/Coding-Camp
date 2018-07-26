@@ -380,6 +380,7 @@ while x == 0:
                         break
         elif player4 == "n":
             print("You will move around the mountain now.")
+            
         
     quit = raw_input("press Q to quit. ") 
     if quit == "Q" or "q":
