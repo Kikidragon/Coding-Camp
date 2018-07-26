@@ -586,7 +586,7 @@ while x == 0:
             if path2choice == "1":
                 print("You are now nearing a river.")
                 player2= raw_input("Would you like to fill your canteens (y/n)? ")
-                if player2 == "y":
+                  print("You have chosen path 3.")
                     water = 15
                     print("water: ", water)
                 elif player2 == "n":
@@ -699,6 +699,7 @@ while x == 0:
                             if end == "n":
                                 print("Goodbye!")
                                 break
+#2 - 3 - 1
                 elif path2choice == "3":
                     print("You have chosen path 3.")
                     print("You are nearing a mountain.")
@@ -847,6 +848,7 @@ while x == 0:
                 elif magma== "h":
                     print("you have been able to hide and sneak behind Magma. You silently jump across the moat and have collected the artifact.")
                     path3choice = ("Do you want to move on to path 1 or 2? ")
+#3 - 2 - 1
                     if path3choice == "1":
                         print("You are now nearing a river.")
                         player2= raw_input("Would you like to fill your canteens (y/n)? ")
@@ -1039,6 +1041,7 @@ while x == 0:
                                     if end == "n":
                                         print("Goodbye!")
                                         break
+#3 - 1 - 2
                     elif path3choice == "2":
                         print("You have chosen path 2.")
                         print("you are nearing an apple tree.")
