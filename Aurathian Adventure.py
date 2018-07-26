@@ -3,10 +3,8 @@ import time
 y = 0
 x = 0    #creates infinite loop!
 while x == 0:
-    print("") #opening here/welcome message
     
-    #what variables should we make?
-    
+    print("WELCOME TO AURATHIAN ADVENTURE!")
     name= raw_input("What is your name? ")
     print("Hello " + name)
     gender = raw_input("What is your gender (b/g)? ")
@@ -291,8 +289,8 @@ while x == 0:
                     if end == "n":
                         print("Goodbye!")
                         break
-            elif player4 == "n":
-                print("You will move around the mountain now.")
+        
+            
 
         
     elif path == "2":
@@ -303,8 +301,33 @@ while x == 0:
             print("food: ", food)
         elif player3 == "n":
             print("food: ", food)
-        print("You inching closer and closer to the cave and should get there tommorrow, but now you need to rest")
-        
+        print("You are inching closer and closer to the cave and should get there tommorrow, but now you need to rest.")
+        health = 80
+        time = 700
+        print("health: ", health)
+        print("time: ", time)
+        rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
+        if rest == "4":
+            health = 100
+            time = 1100
+            print("health: ", health)
+            print("time: ", time)
+        elif rest == "3":
+            health = 95
+            time = 1000
+            print("health: ", health)
+            print("time: ", time)
+        elif rest == "2":
+            health = 85
+            time = 900
+            print("health: ", health) 
+            print("time: ", time)
+        elif drink1 == "1":
+            health = 82
+            time = 800
+            print("health: ", health)
+            print("time: ", time)
+            
         print("Now that you are rested up you can continue the short journey to the cave. You finally have reached the cave when you hear a song. That is when you realize it is the infamous siren song.")
         siren= raw_input("Would you like to fight, run, hide, or cover your ears and stay as silent as you can to get behind her?(f,r,h,c)? ")
         if siren == "f":
@@ -378,14 +401,56 @@ while x == 0:
                     if end == "n":
                         print("Goodbye!")
                         break
-        elif player4 == "n":
-            print("You will move around the mountain now.")
-            
+            path3choice = raw_input("Move on to path 1 or 2? ")
+            if path3choice == "1":
+                print("You are now nearing a river.")
+            player2= raw_input("Would you like to fill your canteens (y/n)? ")
+            if player2 == "y":
+                water = 15
+                print("water: ", water)
+            elif player2 == "n":
+                print("water: ", water)
+            print("Continuing on path. You finaly make it to the entrance of the cave and you enter. That is when you see a demon bear!!!!!!!!!!!")
+            bear= raw_input("Would you like to fight, run, hide, or trick the bear(f/r/h/t)? ")    
+            if bear == "f":
+                print("You have successfully defeated the bear. The bear, understanding he was rightfully defeated in battle, presents you with the earth gem.")
+            elif bear == "r":
+                print("The bear easily catches up and eats you.")
+                print("YOU DIED!")
+                end = raw_input("Play again (y/n)? ")
+                if end == "y":
+                    print("Welcome back!")
+                    continue
+                if end == "n":
+                    print("Goodbye!")
+                    break
+            elif bear == "h":
+                print("The bear finds and kills you.")
+                print("YOU DIED!")
+                end = raw_input("Play again (y/n)? ")
+                if end == "y":
+                    print("Welcome back!")
+                    continue
+                if end == "n":
+                    print("Goodbye!")
+                    break
+            elif bear == "t":
+                print("You have successfully tricked the bear. The bear, understanding he was tricked, presents you with the earth gem.")
+
+                #here
+            elif path3choice == "2":
+                #here
         
-    quit = raw_input("press Q to quit. ") 
-    if quit == "Q" or "q":
-        break    #so that the player can exit
-    
+        
+
+                print("YOU WON!")
+                end = raw_input("Play again (y/n)? ")
+                if end == "y":
+                    print("Welcome back!")
+                    continue
+                if end == "n":
+                    print("Goodbye!")
+                    break
     
         #STORY NOTES:
     #in a forest on an island "Aurath", 
@@ -408,3 +473,5 @@ while x == 0:
     #has a villian at each cave to make it harder. Bear(will be guarding the earth), Siren(which will guard the water cave), A dragon (will guard the last cave) and a Magma monster (that will guard the fire element cave)
     #each cave has a gem and each gem is a different element. Water, Fire, Earth. 
     #Caves abysmal den, walslan hole, elmere caves
+
+
