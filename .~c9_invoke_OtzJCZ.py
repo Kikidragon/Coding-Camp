@@ -212,7 +212,7 @@ while x == 0:
             elif drink1 == "1":
                 health = 82
                 time = 800
-                print("health: ", health)
+            health = 82
                 print("time: ", time)
             
         print("Now that you are rested up you can continue the short journey to the cave. You finally have reached the cave when you hear a song. That is when you realize it is the infamous siren song.")

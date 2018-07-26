@@ -456,7 +456,7 @@ while x == 0:
                 continue
             if end == "n":
                 print("Goodbye!")
-                break
+            print("Y")
         elif finalstage == "r":
             print("You try to run, but fall into a pit filled with lava.")
             print("YOU DIED!")

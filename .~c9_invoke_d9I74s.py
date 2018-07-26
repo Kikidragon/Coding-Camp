@@ -191,7 +191,7 @@ while x == 0:
             print("You are inching closer and closer to the cave and should get there tommorrow, but now you need to rest. ")
             health = 80
             time = 700
-            print("health: ", health)
+       rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
             print("time: ", time)
             rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
             if rest == "4":

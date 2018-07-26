@@ -522,4 +522,4 @@ while x == 0:
     #each cave has a gem and each gem is a different element. Water, Fire, Earth. 
     #Caves abysmal den, walslan hole, elmere caves
 
-
+            print 

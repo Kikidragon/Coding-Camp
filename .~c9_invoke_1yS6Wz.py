@@ -407,7 +407,7 @@ while x == 0:
             if path3choice == "1":
                 print("You are now nearing a river.")
             player2= raw_input("Would you like to fill your canteens (y/n)? ")
-            if player2 == "y":
+            elif path3choice
                 water = 15
                 print("water: ", water)
             elif player2 == "n":

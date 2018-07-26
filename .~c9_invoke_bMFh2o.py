@@ -7,7 +7,7 @@ while x == 0:
     print("WELCOME TO AURATHIAN ADVENTURE!")
     name= raw_input("What is your name? ")
     print("Hello " + name)
-    gender = raw_input("What is your gender (b/g)? ")
+    print("WELCOME TO AURATH")
     if gender == "b":
         boygirl = "boy"
     elif gender == "g":

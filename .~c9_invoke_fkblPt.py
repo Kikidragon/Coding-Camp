@@ -441,7 +441,7 @@ while x == 0:
 
                 #here
             elif path3choice == "2":
-                #here
+        #final boss battle scene 
         
         #final boss battle scene woooo!
         print("You have successfully collected all three gems and have reinserted them into the wand. now you must battle one last time to get to the portal which can teleport you home. Get ready!")

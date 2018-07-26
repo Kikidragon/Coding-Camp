@@ -208,7 +208,7 @@ while x == 0:
                 health = 85
                 time = 900
                 print("health: ", health) 
-                print("time: ", time)
+            time = 900
             elif drink1 == "1":
                 health = 82
                 time = 800

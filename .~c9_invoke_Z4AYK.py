@@ -193,7 +193,7 @@ while x == 0:
             time = 700
             print("health: ", health)
             print("time: ", time)
-            rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
+        rest = raw_input("Rest 1, 2, 3, or 4 hours? ")
             if rest == "4":
                 health = 100
                 time = 1100

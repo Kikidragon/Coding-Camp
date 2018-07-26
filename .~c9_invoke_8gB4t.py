@@ -489,7 +489,7 @@ while x == 0:
                     continue
                 if end == "n":
                     print("Goodbye!")
-                    break
+                print("You arrive in the cave and are teleported home. After arriving in your home, England, you are able to turn into a dragon whenever you want using t
             if finalchoice == "y":
                 print("You arrive in the cave and are teleported home. After arriving in your home, England, you are able to turn into a dragon whenever you want using the magical wand, and get to keep your weapon as well. You know you will never forget your adventures on the island of Aurath, and decide to write a novel about your experiences.")
                 end = raw_input("Play again (y/n)? ")

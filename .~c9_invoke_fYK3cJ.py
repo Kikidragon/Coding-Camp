@@ -411,7 +411,7 @@ while x == 0:
                 water = 15
                 print("water: ", water)
             elif player2 == "n":
-                print("water: ", water)
+    print("YOU WON!")
             print("Continuing on path. You finaly make it to the entrance of the cave and you enter. That is when you see a demon bear!!!!!!!!!!!")
             bear= raw_input("Would you like to fight, run, hide, or trick the bear(f/r/h/t)? ")    
             if bear == "f":

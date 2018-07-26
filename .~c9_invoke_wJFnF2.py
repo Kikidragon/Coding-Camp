@@ -442,7 +442,7 @@ while x == 0:
                 #here
             elif path3choice == "2":
                 #here
-        
+        print("You have successfully collected all three gems and have reinserted them into the wand. now you must battle onl")
         #final boss battle scene woooo!
         print("You have successfully collected all three gems and have reinserted them into the wand. now you must battle one last time to get to the portal which can teleport you home. Get ready!")
         print("As you approach, you see the cave open and unguarded, and wonder why. As you approach, a DRAGON appears, materializing out of the forest next to the cave. ")

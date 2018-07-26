@@ -477,7 +477,7 @@ while x == 0:
             if end == "n":
                 print("Goodbye!")
                 break
-        elif finalstage == "t":
+            finalchoice = raw_input("do you a
             ("It turns out that the dragon is reasonable. In exchange for all your supplies, he will let you pass and keep the wand(as well as your weapon).")
             finalchoice = raw_input("do you accept the offer(y/n)? ")
             if finalchoice == "n":

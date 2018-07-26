@@ -447,7 +447,7 @@ while x == 0:
         print("You have successfully collected all three gems and have reinserted them into the wand. now you must battle one last time to get to the portal which can teleport you home. Get ready!")
         print("As you approach, you see the cave open and unguarded, and wonder why. As you approach, a DRAGON appears, materializing out of the forest next to the cave. ")
         finalstage = raw_input("Do you choose to fight, retreat, try to sneak past, or try to talk to the dragon (f/r/s/t)? ")
-        if finalstage == "f":
+        elif fi
             print("You have been sent to outer space.")
             print("YOU DIED!")
             end = raw_input("Play again (y/n)? ")

@@ -466,7 +466,7 @@ while x == 0:
                 continue
             if end == "n":
                 print("Goodbye!")
-                break
+            ("The dragon does not see you, so turns to go back into the cave. 
         elif finalstage == "s":
             ("The dragon does not see you, so turns to go back into the cave. In doing so, he knocks you into a tree full of deadly wasps with his tail.")
             print("YOU DIED!")

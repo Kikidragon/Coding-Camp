@@ -405,7 +405,7 @@ while x == 0:
                         break
             path3choice = raw_input("Move on to path 1 or 2? ")
             if path3choice == "1":
-                print("You are now nearing a river.")
+            print("You will move around the mountain now. ")
             player2= raw_input("Would you like to fill your canteens (y/n)? ")
             if player2 == "y":
                 water = 15

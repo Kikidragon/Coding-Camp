@@ -408,7 +408,7 @@ while x == 0:
                 print("You are now nearing a river.")
             player2= raw_input("Would you like to fill your canteens (y/n)? ")
             if player2 == "y":
-                water = 15
+            water = 15
                 print("water: ", water)
             elif player2 == "n":
                 print("water: ", water)

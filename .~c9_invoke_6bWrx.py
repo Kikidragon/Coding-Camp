@@ -303,7 +303,7 @@ while x == 0:
         elif player3 == "n":
             print("food: ", food)
         print("You are inching closer and closer to the cave and should get there tommorrow, but now you need to rest.")
-        health = 80
+        print("You are inching closer and closer to the cave and should get there tommorrow, but now you need to rest.")
         time = 700
         print("health: ", health)
         print("time: ", time)
