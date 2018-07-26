@@ -245,11 +245,8 @@ while x == 0:
             print("food: ", food)
         print("You inching closer and closer to the cave and should get there tommorrow, but now you need to rest")
         
-        print("Now that you are rested up you can continue the short journey to the cave. You finally have reached the cave when you hear a song. thats when you realize it is the infamous siren song.")
-        siren= raw_input("Would you like to fight, run, hide, or cover your ears and stay as silent as you can to get behind her?(f,r,h,c)")
-        if siren == "f":
-            print("You turn into her mindless minion")
-        e
+        print("Now that you are rested up you can continue the short journey to the cave. You finally have ")
+        siren= raw_input("Would you like to fight, run, hide, or co")
     elif path == "3":
         print("You are nearing a mountain.")
         player4= raw_input("Would you like to climb the mountain (y/n)? ")
